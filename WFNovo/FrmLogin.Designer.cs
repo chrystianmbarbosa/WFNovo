@@ -1,6 +1,6 @@
 ﻿namespace WFNovo
 {
-    partial class Form1
+    partial class FrmLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -55,6 +55,7 @@
             // 
             txtPassword.Location = new Point(92, 69);
             txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(100, 23);
             txtPassword.TabIndex = 3;
             // 
@@ -73,10 +74,11 @@
             btnLogar.Name = "btnLogar";
             btnLogar.Size = new Size(75, 23);
             btnLogar.TabIndex = 4;
-            btnLogar.Text = "Login";
+            btnLogar.Text = "Logar";
             btnLogar.UseVisualStyleBackColor = true;
+            btnLogar.Click += btnLogar_Click;
             // 
-            // Form1
+            // FrmLogin
             // 
             AccessibleRole = AccessibleRole.None;
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -87,7 +89,7 @@
             Controls.Add(lblPassword);
             Controls.Add(txtUserName);
             Controls.Add(lblUsername);
-            Name = "Form1";
+            Name = "FrmLogin";
             Text = "Login";
             ResumeLayout(false);
             PerformLayout();
